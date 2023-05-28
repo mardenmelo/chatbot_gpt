@@ -18,7 +18,7 @@ export function Home() {
         model: 'gpt-3.5-turbo'
       }, {
         headers: {
-          'Authorization': 'Bearer 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',
+          'Authorization': 'Bearer YOUR_TOKEN',
           'Content-Type': 'application/json'
         }
       });
@@ -53,7 +53,7 @@ export function Home() {
 
   return (
     <LayoutContainer>
-      <div>
+      <div style={{fle}}>
         {messages.map((message, index) => (
           <div key={index}>
             {message.role === 'user' && <p>User: {message.content}</p>}
